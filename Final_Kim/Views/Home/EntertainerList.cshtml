@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IQueryable<Entertainer>
+
+<div class="text-center">
+    <table>
+        <thead class="fw-bold">
+            <tr>
+                <td>Entertainer</td>
+                <td>Details</td>
+            </tr>
+        </thead>
+
+        @foreach (Entertainer e in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@e.EntStageName</td>
+                    <td><a class="btn btn-info" asp-controller="Home" asp-action="EntertainerDetails" asp-route-id="@e.EntertainerId">Details</a></td>
+                </tr>
+            </tbody>
+        }
+
+    </table>
+</div>
+
+
+<a class="btn btn-light" asp-controller="Home" asp-action="EntertainerForm">Add Entertainer</a>

@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Entertainer
+
+<div class="text-center">
+    <form method="post">
+        <input type="hidden" asp-for="EntertainerId" />
+        <label asp-for="EntStageName">Stage Name</label>
+        <input asp-for="EntStageName"/>
+        <br /><br />
+        <label asp-for="EntSsn">Social Security Number</label>
+        <input asp-for="EntSsn" />
+        <br /><br />
+        <label asp-for="EntStreetAddress">Street Address</label>
+        <input asp-for="EntStreetAddress" />
+        <br /><br />
+        <label asp-for="EntCity">City</label>
+        <input asp-for="EntCity" />
+        <br /><br />
+        <label asp-for="EntState">State</label>
+        <input asp-for="EntState"/> 
+        <br /><br />
+        <label asp-for="EntZipCode">ZipCode</label>
+        <input asp-for="EntZipCode" />
+        <br /><br />
+        <label asp-for="EntPhoneNumber">Phone Number</label>
+        <input asp-for="EntPhoneNumber" />
+        <br /><br />
+        <label asp-for="EntWebPage">WebPage</label>
+        <input asp-for="EntWebPage" />
+        <br /><br />
+        <label asp-for="EntEmailAddress">Email Address</label>
+        <input asp-for="EntEmailAddress" />
+        <br /><br />
+        <label asp-for="DateEntered">Date</label>
+        <input asp-for="DateEntered" />
+
+        <br /><br />
+        <button type="submit">Submit</button>
+    </form>
+</div>
